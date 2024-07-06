@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Zero Hunger Initiative</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#provide-food">Provide Food</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#food-schemes">Food Schemes</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </header>
+
+    <div id="home" class="content-section">
+        <h1>Home</h1>
+        <p>What is SDG 2?</p>
+        <p>Sustainable Development Goal 2 (SDG 2) aims to end hunger, achieve food security and improved nutrition, and promote sustainable agriculture. Our solution addresses these goals by providing platforms for food donation, volunteering, and awareness of government food schemes.</p>
+        <h2>Our Solution</h2>
+        <p>Details to be added...</p>
+    </div>
+
+    <div id="about" class="content-section">
+        <h1>About</h1>
+        <div class="card">
+            <h2>K. Pranith</h2>
+            <ul>
+                <li>Mobile Number: 9398876567</li>
+                <li>E-Mail: kantamneni.pranith.2023@vitstudent.ac.in</li>
+                <li>Reg No: 23BAI1202</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>K. Sai Suhas</h2>
+            <ul>
+                <li>Mobile Number: 9063222605</li>
+                <li>E-Mail: kallasai.suhas2023@vitstudent.ac.in</li>
+                <li>Reg No: 23BAI1147</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="donate" class="content-section">
+        <h1>Donate</h1>
+        <h2>Donate Money</h2>
+        <form id="money-donation-form">
+            <label for="donor-name">Name:</label>
+            <input type="text" id="donor-name" name="name" required>
+            <label for="donor-phone">Phone Number:</label>
+            <input type="tel" id="donor-phone" name="phone" required>
+            <label for="donation-amount">Amount:</label>
+            <input type="number" id="donation-amount" name="amount" required>
+            <button type="submit">Donate</button>
+        </form>
+        <h2>Donate Food</h2>
+        <div class="food-options">
+            <div class="food-item" data-price="75">
+                <h4>Rice + Curry</h4>
+                <p>75 rupees</p>
+            </div>
+            <div class="food-item" data-price="75">
+                <h4>Curd Rice</h4>
+                <p>75 rupees</p>
+            </div>
+            <div class="food-item" data-price="50">
+                <h4>Sambar Rice</h4>
+                <p>50 rupees</p>
+            </div>
+            <div class="food-item">
+                <h4>Customize</h4>
+                <form id="custom-food-form">
+                    <label>
+                        <input type="checkbox" name="items" value="30"> Rice (30 rupees)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="items" value="20"> Dal (20 rupees)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="items" value="20"> Sambar (20 rupees)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="items" value="40"> Special Curry (40 rupees)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="items" value="10"> Sweet (10 rupees)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="items" value="20"> Potato Fry (20 rupees)
+                    </label>
+                    <p>Total: <span id="custom-total">0</span> rupees</p>
+                    <button type="submit">Donate Custom Food</button>
+                </form>
+            </div>
+        </div>
+        <form id="food-donation-form" style="display: none;">
+            <label for="food-donor-name">Name:</label>
+            <input type="text" id="food-donor-name" name="name" required>
+            <label for="food-donor-phone">Phone Number:</label>
+            <input type="tel" id="food-donor-phone" name="phone" required>
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+
+    <div id="provide-food" class="content-section">
+        <h1>Provide Food</h1>
+        <p>This section is for restaurant owners or managers to donate excess food at the end of the day. Donating food helps reduce waste and supports those in need.</p>
+        <form id="provide-food-form">
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="restaurant-name" required>
+            <label for="restaurant-city">City:</label>
+            <input type="text" id="restaurant-city" name="city" required>
+            <label for="restaurant-pincode">Pin Code:</label>
+            <input type="text" id="restaurant-pincode" name="pincode" required>
+            <label for="food-details">Food Details:</label>
+            <textarea id="food-details" name="food-details" required></textarea>
+            <button type="submit">Provide Food</button>
+        </form>
+    </div>
+
+    <div id="volunteer" class="content-section">
+        <h1>Volunteer</h1>
+        <form id="volunteer-form">
+            <label for="volunteer-name">Name:</label>
+            <input type="text" id="volunteer-name" name="name" required>
+            <label for="volunteer-phone">Phone Number:</label>
+            <input type="tel" id="volunteer-phone" name="phone" required>
+            <label for="volunteer-city">City:</label>
+            <input type="text" id="volunteer-city" name="city" required>
+            <label for="volunteer-date">Date Available:</label>
+            <input type="date" id="volunteer-date" name="date" required>
+            <label for="volunteer-time">Time Available:</label>
+            <input type="time" id="volunteer-time" name="time" required>
+            <button type="submit">Volunteer</button>
+        </form>
+    </div>
+
+    <div id="food-schemes" class="content-section">
+        <h1>Food Schemes</h1>
+        <label for="state-filter">Filter by State:</label>
+        <select id="state-filter">
+            <option value="all">All States</option>
+            <option value="central">Central Government Schemes</option>
+            <option value="tamil-nadu">Tamil Nadu</option>
+            <option value="andhra-pradesh">Andhra Pradesh</option>
+            <option value="kerala">Kerala</option>
+        </select>
+        <div id="scheme-list" class="scheme-list"></div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Zero Hunger Initiative. All rights reserved.
+    </footer>
+</body>
+</html>
