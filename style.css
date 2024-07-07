@@ -260,7 +260,7 @@ form button:hover {
 }
 
 .navbar .nav-links li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s;
