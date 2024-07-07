@@ -312,3 +312,63 @@ form button:hover {
             0%, 50% { transform: translateX(-50%) scale(0); }
             51%, 100% { transform: translateX(-50%) scale(1); }
         }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 16px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.highlight a {
+    background-color: #4CAF50; /* Change this color as needed */
+    color: white;
+    border-radius: 5px;
+}
+
+.highlight a:hover {
+    background-color: #45a049; /* Darken the highlight color on hover */
+}
+
