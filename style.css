@@ -247,8 +247,8 @@ form button:hover {
 
         .face {
             position: absolute;
-            width: 100px;
-            height: 150px;
+            width: 50px;
+            height: 100px;
             background-color: #ccc;
             border: 5px solid #999;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
