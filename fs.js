@@ -1,4 +1,5 @@
-const stateFilter = document.getElementById('state-filter');
+document.addEventListener('DOMContentLoaded', () => {
+    const stateFilter = document.getElementById('state-filter');
     const schemeList = document.getElementById('scheme-list');
 
     const schemes = {
@@ -27,13 +28,11 @@ const stateFilter = document.getElementById('state-filter');
 
     function displaySchemes(state) {
         schemeList.innerHTML = '';
-        if (state === 'all') {
-            Object.keys(schemes).forEach(key => {
-                schemes[key].forEach(scheme => createSchemeCard(scheme));
-            });
-        } else {
-            schemes[state].forEach(scheme => createSchemeCard(scheme));
-        }
+        const selectedSchemes = state === 'all' 
+            ? Object.values(schemes).flat() 
+            : schemes[state];
+
+        selectedSchemes.forEach(createSchemeCard);
     }
 
     function createSchemeCard(scheme) {
@@ -41,13 +40,18 @@ const stateFilter = document.getElementById('state-filter');
         schemeCard.classList.add('scheme-card');
         schemeCard.innerHTML = `<h3>${scheme.name}</h3>`;
         schemeCard.addEventListener('click', () => {
-            if (!schemeCard.querySelector('p')) {
+            const details = schemeCard.querySelector('p');
+            if (!details) {
                 const details = document.createElement('p');
                 details.textContent = scheme.details;
                 schemeCard.appendChild(details);
             } else {
-                schemeCard.querySelector('p').remove();
+                schemeCard.removeChild(details);
             }
         });
         schemeList.appendChild(schemeCard);
     }
+
+    // Display all schemes on initial load
+    displaySchemes('all');
+});
