@@ -230,4 +230,114 @@ form button:hover {
 .home-content p {
     margin-bottom: 1rem;
 }
+.scene {
+            width: 200px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transform: rotateX(-15deg) rotateY(25deg);
+        }
+
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+            border: 5px solid #999;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .face.front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        .face.back {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        .face.left {
+            width: 100px;
+            height: 300px;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .face.right {
+            width: 100px;
+            height: 300px;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .face.top {
+            width: 200px;
+            height: 200px;
+            transform: rotateX(-90deg) translateZ(150px) translateY(-100px);
+        }
+
+        .face.bottom {
+            width: 200px;
+            height: 200px;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .slot {
+            position: absolute;
+            left: 50%;
+            width: 80px;
+            height: 10px;
+            background-color: #666;
+            transform: translateX(-50%);
+        }
+
+        .slot.top {
+            top: 20px;
+        }
+
+        .slot.bottom {
+            bottom: 20px;
+        }
+
+        .note {
+            position: absolute;
+            left: 50%;
+            top: -40px;
+            font-size: 24px;
+            transform: translateX(-50%);
+            animation: dropNote 3s ease-in-out infinite;
+        }
+
+        .apple {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            font-size: 30px;
+            transform: translateX(-50%) scale(0);
+            animation: popApple 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes dropNote {
+            0% { top: -40px; }
+            50% { top: 20px; }
+            100% { top: 20px; opacity: 0; }
+        }
+
+        @keyframes popApple {
+            0%, 50% { transform: translateX(-50%) scale(0); }
+            51%, 100% { transform: translateX(-50%) scale(1); }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
 
