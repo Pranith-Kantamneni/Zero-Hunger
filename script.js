@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('money-donation-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        alert('Thank you for your donation! Our team will send you the QR code for donating the respective amount.');
+        alert('Thank you for your donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');
         this.reset();
     });
 
     document.getElementById('food-donation-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount.');
+        alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');
         this.reset();
     });
 
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             total += parseInt(checkbox.value);
         });
         document.getElementById('custom-total').textContent = total;
+         alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');
     });
 
     // Initial display of schemes for all states
