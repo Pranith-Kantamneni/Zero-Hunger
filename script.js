@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');
         this.reset();
     });
+    document.getElementById('provide-food-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your food donation! Our team will contact and reach out to your place.');
+        this.reset();
+    });
 
     document.getElementById('volunteer-form').addEventListener('submit', function(event) {
         event.preventDefault();
