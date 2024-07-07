@@ -109,7 +109,7 @@ a:hover {
 
 /* Navbar styles */
 .navbar {
-    background-color: #OOdcOO
+    background-color: #008040; /* Darker green background */
     padding: 1em;
     display: flex;
     justify-content: space-between;
@@ -134,9 +134,29 @@ a:hover {
 }
 
 .navbar .nav-links li a {
-    color: black;
+    color: black; /* Black color for all links */
     text-decoration: none;
     font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    color: white; /* White color on hover */
+}
+
+.navbar .nav-links li a.phep-button {
+    background-color: #4caf50; /* Green background for PHEP button */
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    animation: blink 1s infinite alternate; /* Blink animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #4caf50; /* Green */
+    }
+    to {
+        background-color: #008040; /* Darker green */
+    }
 }
 
 /* Content sections */
