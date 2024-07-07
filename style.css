@@ -200,3 +200,34 @@ form button:hover {
     width: 100%;
     bottom: 0;
 }
+/* Home section */
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.animation-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    margin-bottom: 1rem;
+}
+
