@@ -339,9 +339,48 @@ form button:hover {
             color: #333;
             margin-top: 20px;
         }
-.animate-donation{
-    display: flex;
-     flex-direction: row;
-}
+  .animate-donation {
+            display: flex;
+            flex-direction: row; /* Set the flex direction to horizontal */
+        }
+        .food-options, .scene {
+            flex: 1;
+            padding: 10px;
+        }
+        .food-item {
+            margin-bottom: 15px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ccc;
+        }
+        .front, .back, .left, .right, .top, .bottom {
+            /* Set individual faces of the box */
+        }
+        .front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        .back {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
 
 
