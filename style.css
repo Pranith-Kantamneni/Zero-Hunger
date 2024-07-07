@@ -464,8 +464,20 @@ form button:hover {
         display: flex; /* Show when active (open) */
     }
 
-    .hamburger-menu {
-        display: block; /* Show on mobile */
-        cursor: pointer;
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        background-color: #45a049; /* Darker green on hover */
     }
 }
