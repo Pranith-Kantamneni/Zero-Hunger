@@ -139,9 +139,9 @@ a:hover {
     font-weight: bold;
 }
 
-.navbar .nav-links li a:hover {
+/* .navbar .nav-links li a:hover {
     color: white; /* White color on hover */
-}
+} */
 
 .navbar .nav-links li a.phep-button {
     background-color: #4caf50; /* Green background for PHEP button */
