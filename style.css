@@ -448,4 +448,24 @@ form button:hover {
 .highlight a:hover {
     background-color: #45a049; /* Darken the highlight color on hover */
 }
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide on mobile by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #4caf50; /* Green background color */
+        z-index: 1;
+    }
 
+    .nav-links.active {
+        display: flex; /* Show when active (open) */
+    }
+
+    .hamburger-menu {
+        display: block; /* Show on mobile */
+        cursor: pointer;
+    }
+}
