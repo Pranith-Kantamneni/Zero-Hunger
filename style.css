@@ -65,10 +65,10 @@ p {
     line-height: 1.8;
 }
 
-a {
+/* a {
     color: #4caf50; /* Green color for links */
     text-decoration: none;
-}
+} */
 
 a:hover {
     text-decoration: underline;
@@ -79,10 +79,6 @@ p {
     line-height: 1.8;
 }
 
-a {
-    color: #4caf50; /* Green color for links */
-    text-decoration: none;
-}
 
 a:hover {
     text-decoration: underline;
@@ -98,10 +94,10 @@ p {
     line-height: 1.6;
 }
 
-a {
+/* a {
     color: #4CAF50;
     text-decoration: none;
-}
+} */
 
 a:hover {
     text-decoration: underline;
