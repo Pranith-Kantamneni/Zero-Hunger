@@ -387,13 +387,13 @@ form button:hover {
         .bottom {
             transform: rotateX(-90deg) translateZ(100px);
         }
-        @keyframes rotate {
+/*         @keyframes rotate {
             from {
                 transform: rotateY(0deg);
             }
             to {
                 transform: rotateY(360deg);
             }
-        }
+        } */
 
 
