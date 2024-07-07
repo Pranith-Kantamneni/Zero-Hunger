@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             total += parseInt(checkbox.value);
         });
         document.getElementById('custom-total').textContent = total;
-         alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');
+    });
+     document.getElementById('custom-food-form').addEventListener('submit', function(event) {
+      alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');  
     });
 
     // Initial display of schemes for all states
