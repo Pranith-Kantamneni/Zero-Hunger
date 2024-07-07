@@ -339,7 +339,7 @@ form button:hover {
             color: #333;
             margin-top: 20px;
         }
-  .animate-donation {
+ .animate-donation {
             display: flex;
             flex-direction: row; /* Set the flex direction to horizontal */
         }
@@ -354,15 +354,20 @@ form button:hover {
             width: 200px;
             height: 200px;
             position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            animation: rotate 10s infinite linear;
         }
         .face {
             position: absolute;
             width: 100%;
             height: 100%;
             background: #ccc;
-        }
-        .front, .back, .left, .right, .top, .bottom {
-            /* Set individual faces of the box */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 1px solid #000;
         }
         .front {
             transform: rotateY(0deg) translateZ(100px);
@@ -381,6 +386,14 @@ form button:hover {
         }
         .bottom {
             transform: rotateX(-90deg) translateZ(100px);
+        }
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
         }
 
 
