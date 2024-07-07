@@ -125,12 +125,15 @@ a:hover {
     text-decoration: none;
     font-weight: bold;
 }
+.logo-text{
+    colour : black;
+}
 
 /* .navbar .nav-links li a:hover {
     color: white; /* White color on hover */
 } */
 
-.navbar .nav-links li a.phep-button {
+.navbar .nav-links li a.highlight {
     background-color: #4caf50; /* Green background for PHEP button */
     padding: 0.5em 1em;
     border-radius: 5px;
