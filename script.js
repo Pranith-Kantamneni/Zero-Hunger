@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.'); 
          this.reset();
     });
-        function toggleNav() {
+       document.getElementById('custom-food-form').addEventListener('click', function(event) { 
         var navLinks = document.getElementById("navLinks");
         navLinks.classList.toggle("active");
-    }
+    });
 
     // Initial display of schemes for all states
     displaySchemes('all');
