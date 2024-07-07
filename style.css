@@ -350,14 +350,14 @@ form button:hover {
         .food-item {
             margin-bottom: 15px;
         }
-        .box {
+/*         .box {
             width: 200px;
             height: 200px;
             position: relative;
             transform-style: preserve-3d;
             transform: rotateY(0deg);
             animation: rotate 10s infinite linear;
-        }
+        } */
         .face {
             position: absolute;
             width: 100%;
@@ -372,7 +372,7 @@ form button:hover {
         .front {
             transform: rotateY(0deg) translateZ(100px);
         }
-        .back {
+/*         .back {
             transform: rotateY(180deg) translateZ(100px);
         }
         .left {
@@ -386,7 +386,7 @@ form button:hover {
         }
         .bottom {
             transform: rotateX(-90deg) translateZ(100px);
-        }
+        } */
 /*         @keyframes rotate {
             from {
                 transform: rotateY(0deg);
