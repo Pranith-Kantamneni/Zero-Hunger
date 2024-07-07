@@ -340,7 +340,7 @@ form button:hover {
             margin-top: 20px;
         }
 .animate-donation{
-    display:flex;
+    display: flex;
      flex-direction: row;
 }
 
