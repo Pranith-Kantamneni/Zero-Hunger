@@ -56,10 +56,10 @@ p {
     line-height: 1.8;
 }
 
-/* a {
+a {
     color: #4caf50; /* Green color for links */
     text-decoration: none;
-} */
+}
 
 a:hover {
     text-decoration: underline;
@@ -85,10 +85,10 @@ p {
     line-height: 1.6;
 }
 
-/* a {
+a {
     color: #4CAF50;
     text-decoration: none;
-} */
+}
 
 a:hover {
     text-decoration: underline;
@@ -248,7 +248,7 @@ form button:hover {
     transition: transform 0.3s;
 }
 
-.navbar .nav-links {
+/* .navbar .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -268,7 +268,7 @@ form button:hover {
 
 .navbar .nav-links li a:hover {
     transform: scale(1.5);
-}
+} */
 
 .navbar .logo:hover {
     transform: rotate(360deg) scale(1.1);
