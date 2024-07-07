@@ -245,7 +245,7 @@ form button:hover {
 }
 
 .navbar .logo-text {
-    color: white;
+    color: black;
     font-size: 1.5em;
     font-weight: bold;
     transition: transform 0.3s;
