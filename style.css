@@ -149,6 +149,46 @@ form button:hover {
 .food-item:hover {
     transform: scale(1.05);
 }
+.navbar .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5em;
+    transition: transform 0.3s, width 0.3s, height 0.3s;
+}
+
+.navbar .logo-text {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 1em;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    transform: scale(1.1);
+}
+
+.navbar .logo:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
 
 
 
