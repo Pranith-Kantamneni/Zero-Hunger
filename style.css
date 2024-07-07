@@ -14,10 +14,10 @@ body {
 }
 
 h1, h2 {
-    color: #2e7d32; /* Dark green color */
+    color: #2e7d32; 
 }
 
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -47,7 +47,7 @@ h1, h2 {
 }
 
 .content-wrapper {
-    margin-bottom: 40px; /* Adjust as needed for spacing */
+    margin-bottom: 50px; /* Adjust as needed for spacing */
 }
 
 .sdg-info, .solution-info {
