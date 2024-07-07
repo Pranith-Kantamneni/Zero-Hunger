@@ -339,5 +339,9 @@ form button:hover {
             color: #333;
             margin-top: 20px;
         }
+.animate-donation{
+    display:flex;
+     flex-direction: row;
+}
 
 
