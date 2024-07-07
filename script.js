@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('custom-total').textContent = total;
     });
      document.getElementById('custom-food-form').addEventListener('submit', function(event) {
-      alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.');  
+      alert('Thank you for your food donation! Our team will send you the QR code for donating the respective amount to the above mentioned mobile number.'); 
+         this.reset();
     });
 
     // Initial display of schemes for all states
