@@ -12,6 +12,60 @@ body {
     margin: 0 auto;
     padding: 2em;
 }
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2e7d32; /* Dark green color */
+}
+
+.home-content-section {
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border: 1px solid #c8e6c9; /* Slightly darker green border */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sdg-info, .solution-info {
+    margin-bottom: 20px;
+}
+
+.sdg-info h2, .solution-info h2 {
+    border-bottom: 2px solid #4caf50; /* Green underline */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+a {
+    color: #4caf50; /* Green color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 
 h1, h2, h3 {
     color: #333;
