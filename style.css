@@ -231,80 +231,61 @@ form button:hover {
 .home-content p {
     margin-bottom: 1rem;
 }
-.scene {
-            width: 50px;
-            height: 200px;
-            position: relative;
-            flex-grow: 3;
-            transform-style: preserve-3d;
+.animate-donation {
+            display: flex;
+            flex-direction: row; /* Set the flex direction to horizontal */
         }
-
-/*         .box {
+        .food-options {
+            flex: 7; /* 70% of the space */
+            padding: 10px;
+        }
+        .scene {
+            flex: 3; /* 30% of the space */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .food-item {
+            margin-bottom: 15px;
+        }
+        .box {
+            width: 100px; /* Adjust the width */
+            height: 100px; /* Adjust the height */
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            animation: rotate 10s infinite linear;
+        }
+        .face {
             position: absolute;
             width: 100%;
             height: 100%;
-            transform-style: preserve-3d;
-            transform: rotateX(-15deg) rotateY(25deg);
-        } */
-
-        .face {
-            position: absolute;
-            width: 50px;
-            height: 100px;
             background-color: #ccc;
-            border: 5px solid #999;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: 1px solid #000;
         }
-
-        .face.front {
-            transform: rotateY(0deg) translateZ(100px);
+        .front {
+            transform: rotateY(0deg) translateZ(50px);
         }
-
-/*         .face.back {
-            transform: rotateY(180deg) translateZ(100px);
+        .back {
+            transform: rotateY(180deg) translateZ(50px);
         }
-
-        .face.left {
-            width: 100px;
-            height: 300px;
-            transform: rotateY(-90deg) translateZ(100px);
+        .left {
+            transform: rotateY(-90deg) translateZ(50px);
         }
-
-        .face.right {
-            width: 100px;
-            height: 300px;
-            transform: rotateY(90deg) translateZ(100px);
+        .right {
+            transform: rotateY(90deg) translateZ(50px);
         }
-
-        .face.top {
-            width: 200px;
-            height: 200px;
-            transform: rotateX(-90deg) translateZ(150px) translateY(-100px);
+        .top {
+            transform: rotateX(90deg) translateZ(50px);
         }
-
-        .face.bottom {
-            width: 200px;
-            height: 200px;
-            transform: rotateX(90deg) translateZ(150px);
+        .bottom {
+            transform: rotateX(-90deg) translateZ(50px);
         }
-
-        .slot {
-            position: absolute;
-            left: 50%;
-            width: 80px;
-            height: 10px;
-            background-color: #666;
-            transform: translateX(-50%);
-        }
-
-        .slot.top {
-            top: 20px;
-        }
-
-        .slot.bottom {
-            bottom: 20px;
-        } */
-
         .note {
             position: absolute;
             left: 50%;
@@ -313,89 +294,21 @@ form button:hover {
             transform: translateX(-50%);
             animation: dropNote 3s ease-in-out infinite;
         }
-
         .apple {
             position: absolute;
             left: 50%;
             bottom: 20px;
             font-size: 30px;
-            transform: translateX(-50%) scale(0);
+            transform: translateX(-50%) scale(1);
             animation: popApple 3s ease-in-out infinite;
             animation-delay: 1.5s;
         }
-
         @keyframes dropNote {
             0% { top: -40px; }
             50% { top: 20px; }
             100% { top: 20px; opacity: 0; }
         }
-
         @keyframes popApple {
             0%, 50% { transform: translateX(-50%) scale(0); }
             51%, 100% { transform: translateX(-50%) scale(1); }
         }
-
-        h1 {
-            text-align: center;
-            font-size: 24px;
-            color: #333;
-            margin-top: 20px;
-        }
- .animate-donation {
-            display: flex;
-            flex-direction: row;
-        }
-        .food-options, .scene {
-            flex: 1;
-            padding: 10px;
-        }
-        .food-item {
-            margin-bottom: 15px;
-        }
-/*         .box {
-            width: 200px;
-            height: 200px;
-            position: relative;
-            transform-style: preserve-3d;
-            transform: rotateY(0deg);
-            animation: rotate 10s infinite linear;
-        } */
-        .face {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            border: 1px solid #000;
-        }
-        .front {
-            transform: rotateY(0deg) translateZ(100px);
-        }
-/*         .back {
-            transform: rotateY(180deg) translateZ(100px);
-        }
-        .left {
-            transform: rotateY(-90deg) translateZ(100px);
-        }
-        .right {
-            transform: rotateY(90deg) translateZ(100px);
-        }
-        .top {
-            transform: rotateX(90deg) translateZ(100px);
-        }
-        .bottom {
-            transform: rotateX(-90deg) translateZ(100px);
-        } */
-/*         @keyframes rotate {
-            from {
-                transform: rotateY(0deg);
-            }
-            to {
-                transform: rotateY(360deg);
-            }
-        } */
-
-
