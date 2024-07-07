@@ -1,30 +1,12 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-/* Content Section */
+/* Scheme cards */
 .content-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #4CAF50;
-}
-
-/* Scheme Cards */
-.scheme-list {
-    margin-top: 20px;
+    color: #008631
 }
 
 .scheme-card {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: #cefad0;
     padding: 1em;
-    border: 1px solid #c3e6cb;
+    border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 1em;
     cursor: pointer;
@@ -32,5 +14,5 @@ body {
 }
 
 .scheme-card:hover {
-    background-color: #c3e6cb;
+    background-color: #f4f4f9;
 }
