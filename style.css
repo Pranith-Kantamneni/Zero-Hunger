@@ -258,7 +258,7 @@ form button:hover {
             transform: rotateY(0deg) translateZ(100px);
         }
 
-        .face.back {
+/*         .face.back {
             transform: rotateY(180deg) translateZ(100px);
         }
 
@@ -301,7 +301,7 @@ form button:hover {
 
         .slot.bottom {
             bottom: 20px;
-        }
+        } */
 
         .note {
             position: absolute;
@@ -341,7 +341,7 @@ form button:hover {
         }
  .animate-donation {
             display: flex;
-            flex-direction: row; /* Set the flex direction to horizontal */
+            flex-direction: row;
         }
         .food-options, .scene {
             flex: 1;
