@@ -233,14 +233,14 @@ form button:hover {
 }
 .animate-donation {
             display: flex;
-            flex-direction: row; /* Set the flex direction to horizontal */
+            flex-direction: row; 
         }
         .food-options {
-            flex: 7; /* 70% of the space */
+            flex: 7;
             padding: 10px;
         }
         .scene {
-            flex: 3; /* 30% of the space */
+            flex: 3; 
             padding: 10px;
             display: flex;
             justify-content: flex-start; 
@@ -250,8 +250,8 @@ form button:hover {
             margin-bottom: 15px;
         }
         .box {
-            width: 200px; /* Adjust the width */
-            height: 200px; /* Adjust the height */
+            width: 200px; 
+            height: 200px; 
             position: relative;
             transform-style: preserve-3d;
             transform: rotateY(0deg);
@@ -352,7 +352,7 @@ form button:hover {
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: #0000;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
 }
