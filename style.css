@@ -131,6 +131,7 @@ form button:hover {
 /* Food options */
 .food-options {
     display: flex;
+    flex-grow: 7;
     flex-wrap: wrap;
     gap: 1em;
 }
@@ -234,6 +235,7 @@ form button:hover {
             width: 50px;
             height: 200px;
             position: relative;
+            flex-grow: 3;
             transform-style: preserve-3d;
         }
 
