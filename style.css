@@ -352,7 +352,7 @@ form button:hover {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: black;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
 }
